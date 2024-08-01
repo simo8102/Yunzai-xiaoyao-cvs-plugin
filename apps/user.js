@@ -18,17 +18,9 @@ export const rule = {
 		reg: "^#*(ck|stoken|cookie|cookies|签到)查询$",
 		describe: "用户个人信息查询"
 	},
-	gclog: {
-		reg: "^#*(更新|获取|导出)抽卡记录$",
-		describe: "更新抽卡记录"
-	},
 	gcPaylog: { //避免指令冲突
 		reg: "^#*(刷新|获取|导出)(充值|氪金)记录$",
 		describe: "刷新充值记录"
-	},
-	mytoken: {
-		reg: "^#*我的(stoken|云ck)$",
-		describe: "查询绑定数据"
 	},
 	bindStoken: {
 		reg: "^(.*)stoken=(.*)$",
@@ -37,10 +29,6 @@ export const rule = {
 	bindLogin_ticket: {
 		reg: "^(.*)login_ticket=(.*)$",
 		describe: "绑定ck自动获取sk"
-	},
-	cloudToken: {
-		reg: "^(.*)ct(.*)$",
-		describe: "云原神签到token获取"
 	},
 	delSign: {
 		reg: "^#*删除(我的)*((stoken|sk)|(云原神|云ck))$",
